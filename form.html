@@ -1,0 +1,123 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: bisque;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        min-height: 100vh;
+      }
+      form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+       border: 1px solid black;
+       background-color: white;
+       padding: 20px;
+       border-radius: 8px;
+        /* width: 100%; */
+        max-width: 700px; 
+      }
+      .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+      .logo h1{
+        color: rgb(181, 30, 3);
+        font-size: 20px;
+      }
+      p{
+        text-align: center;
+        background-color: rgba(243, 156, 156, 0.281);
+        padding: 20px;
+        /* margin: 20px; */
+      }
+      .form-control{
+        display: flex;
+        width: 100%;
+        gap:20px;
+      }
+      label{
+        position: relative;
+      }
+   label input,
+   label select 
+   {
+    
+        width: 100%;
+       padding: 10px;
+       margin-bottom: 10px; 
+   
+      }
+    </style>
+ </head>
+ 
+ <body>
+   
+   
+    <form action="">
+      <div class="logo">
+        <img src="/download (9).png" alt="">
+       <h1>Your Company</h1>
+     </div>
+       <p>Contact Customer Support</p> 
+
+       
+      <div class="form-control">
+      <label > 
+        <span>First Name</span>
+      <input type="text" placeholder="First Name">
+    </label>
+    <label > 
+      <span>last Name</span>
+      <input type="text" placeholder="Last Name">
+    </label>
+  </div>
+    <label > 
+      <span>Email</span>
+      <input type="email" placeholder="Email">
+    </label>
+    <label> 
+      <span>Phone number</span>
+      <input type="tel" placeholder="Phone number">
+    </label>
+  <label>
+    <span>Reason for Contact</span>
+    <select>
+      <option value="">Choose your Reason for contacting us</option>
+      <option value="">To volunteer</option>
+      <option value="">For Enquiryr</option>
+    </select>
+  </label> 
+      
+   
+   
+    <!-- <div class="form-control">
+      <label for="">Reason for Contact</label>
+      <select>
+        <option value="">Choose your Reason for contacting us</option>
+        <option value="">To volunteer</option>
+        <option value="">For Enquiryr</option>
+      </select>
+    </div> -->
+ <div class="form-control">
+      <input type="submit" value="Contact us">
+    </div>
+ 
+    </form>  
+ </body>
+ </html>
+ 
+ 
